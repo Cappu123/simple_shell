@@ -11,7 +11,7 @@
 int _strcmp(char *first, char *second)
 {
 	int i = 0;
-	
+
 	while (first[i] != '\0')
 	{
 		if (first[i] != second[i])
@@ -34,7 +34,7 @@ char *_strcat(char *destination, char *source)
 	char *new_string =  NULL;
 	int len_destin = _strlen(destination);
 	int len_source = _strlen(source);
-	
+
 	new_string = malloc(sizeof(*new_string) * (len_destin + len_source + 1));
 	_strcpy(destination, new_string);
 	_strcpy(source, new_string + len_destin);
@@ -47,14 +47,14 @@ char *_strcat(char *destination, char *source)
  * @string1: string to be searched
  * @string2: string to be used
  *
- * Return: number of bytes 
+ * Return: number of bytes
  */
 
 int _strspn(char *string1, char *string2)
 {
 	int i = 0;
 	int match = 0;
-	
+
 	while (string1[i] != '\0')
 	{
 		if (_strchr(string2, string1[i]) == NULL)
@@ -65,7 +65,8 @@ int _strspn(char *string1, char *string2)
 	return (match);
 }
 /**
- * _strcspn - computes segment of string1 which consists of characters not in string2
+ * _strcspn - computes segment of string1 
+ * which consists of characters not in string2
  * @string1: string to be searched
  * @string2: string to be used
  *
@@ -75,7 +76,7 @@ int _strspn(char *string1, char *string2)
 int _strcspn(char *string1, char *string2)
 {
 	int len = 0, i;
-	
+
 	for (i = 0; string1[i] != '\0'; i++)
 	{
 		if (_strchr(string2, string1[i]) != NULL)
@@ -95,7 +96,7 @@ int _strcspn(char *string1, char *string2)
 char *_strchr(char *s, char c)
 {
 	int i = 0;
-	
+
 	for (; s[i] != c && s[i] != '\0'; i++)
 		;
 	if (s[i] == c)
