@@ -7,8 +7,8 @@ Project to be done in teams of 2 people (your team: Cappy Alemayehu)
 
 For this project, we expect you to look at these concepts:
 
-[Everything you need to know to start coding your own shell] (https://intranet.alxswe.com/concepts/64)
-[Approaching a Project] (https://intranet.alxswe.com/concepts/350)
+[Everything you need to know to start coding your own shell](https://intranet.alxswe.com/concepts/64)
+[Approaching a Project](https://intranet.alxswe.com/concepts/350)
 
 ## Backgound Context
 
