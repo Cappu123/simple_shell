@@ -22,42 +22,46 @@
 #define min(x, y) (((x) < (y)) ? (x) : (y))
 
 /**
- * struct map - a struct that maps a command name to a function
- * @command_name: name of the command
- * @func: the function that executes the command
+ *struct map - a struct that maps a command name to a function 
+ *
+ *@command_name: name of the command
+ *@func: the function that executes the command
  */
 
 typedef struct map
 {
 	char *command_name;
 	void (*func)(char **command);
-} elements_pair;
+} function_map;
 
 extern char **environ;
 extern char *line;
 extern char **commands;
-extern char *command_name;
+extern char *shell_name;
 extern int status;
 
-void flush(char *, int);
+/*helpers*/
+void print(char *, int);
 char **tokenizer(char *, char *);
 void remove_newline(char *);
 int _strlen(char *);
 void _strcpy(char *, char *);
 
+/*helpers2*/
 int _strcmp(char *, char *);
 char *_strcat(char *, char *);
 int _strspn(char *, char *);
 int _strcspn(char *, char *);
 char *_strchr(char *, char);
 
+/*helpers3*/
 char *_strtok_r(char *, char *, char **);
 int _atoi(char *);
-void *_realloc(void *ptr, unsigned int ptr_size, unsigned int memo_size);
-void handle_ctrl_c(int);
-void ignore_comment(char *);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+void ctrl_c_handler(int);
+void remove_comment(char *);
 
-
+/*utils*/
 int parse_command(char *);
 void execute_command(char **, int);
 char *check_path(char *);
