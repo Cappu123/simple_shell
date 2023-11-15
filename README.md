@@ -18,6 +18,6 @@ Write a simple UNIX command interpreter.
 
 
 
-![the gates of shell](https://s3.amazonaws.com/intranet-projects-files/h…bertonschool-low_level_programming/235/shell.jpeg)
+![the gates of shell](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/235/shell.jpeg)
 
 ^ “The Gates of Shell”, by [Spencer Cheng](https://twitter.com/spencerhcheng/status/855104635069054977), featuring [Julien Barbier](https://twitter.com/julienbarbier42)
