@@ -10,7 +10,7 @@
 
 char **tokenizer(char *str_input, char *delimiter)
 {
-	int num_delimiter = 0;
+	int num_delim = 0;
 	char **av = NULL;
 	char *token = NULL;
 	char *track_ptr = NULL;
@@ -19,14 +19,14 @@ char **tokenizer(char *str_input, char *delimiter)
 
 	while (token != NULL)
 	{
-		av = _realloc(av, sizeof(*av) * num_delimiter, sizeof(*av) * (num_delimiter + 1));
-		av[num_delimiter] = token;
+		av = _realloc(av, sizeof(*av) * num_delim, sizeof(*av) * (num_delim + 1));
+		av[num_delim] = token;
 		token = _strtok_r(NULL, delimiter, &track_ptr);
-		num_delimiter++;
+		num_delim++;
 	}
 
-	av = _realloc(av, sizeof(*av) * num_delimiter, sizeof(*av) * (num_delimiter + 1));
-	av[num_delimiter] = NULL;
+	av = _realloc(av, sizeof(*av) * num_delim, sizeof(*av) * (num_delim + 1));
+	av[num_delim] = NULL;
 
 	return (av);
 }

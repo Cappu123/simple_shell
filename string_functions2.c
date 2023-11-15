@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * _strcspn - computes segment of string1 which consists of characters not in string2
+ * _strcspn - computes segment of string1
+ * which consists of characters not in string2
  * @string1: string to be searched
  * @string2: string to be used
  *
@@ -32,6 +33,7 @@ int _strcspn(char *string1, char *string2)
 char *_strchr(char *s, char c)
 {
 	int i = 0;
+
 	for (; s[i] != c && s[i] != '\0'; i++)
 	;
 	if (s[i] == c)

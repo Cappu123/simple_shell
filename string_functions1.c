@@ -45,7 +45,7 @@ char *_strcat(char *destination, char *source)
  * @string1: string to be searched
  * @string2: string to be used
  *
- * Return: number of bytes 
+ * Return: number of bytes
  */
 int _strspn(char *string1, char *string2)
 {

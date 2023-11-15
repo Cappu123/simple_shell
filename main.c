@@ -1,18 +1,7 @@
 #include "shell.h"
 
 /**
- * File_name: main.c file
- *
- * Auth: Cappy Alemayehu
- * Project: 0x16. C - Simple Shell
- *
- * Description:
- * Function(main) The main shell program
- * 
- */
-
-/**
- * main - the main shell
+ * main - the main command interprater shell
  * @argc: number of arguments passed
  * @argv: program arguments to be parsed
  *
