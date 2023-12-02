@@ -34,7 +34,7 @@ Write a simple UNIX command interpreter.
 <li><code>sh</code>(Run<code>sh</code>as well</li>
 </ul>
 ## Learning Objectives
-At the end of this project, you are expected to be able to [ explain to anyone, ](https://fs.blog/feynman-learning-technique/)***without the help of Google:***
+At the end of this project, you are expected to be able to [explain to anyone,] (https://fs.blog/feynman-learning-technique/)***without the help of Google:***
 
 ### General
 * Who designed and implemented the original Unix operating system
